@@ -23,6 +23,7 @@ function GoFullsize() {
 	sheet.setAttribute('id','fullsizestyle');
 	sheet.innerHTML = ".container {width: 100% !important;}";
 	document.body.appendChild(sheet);
+	window.dispatchEvent(new Event('resize'));
 	prepareBackToNormalView();
 }
 
